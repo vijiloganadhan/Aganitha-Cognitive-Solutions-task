@@ -1,0 +1,25 @@
+[project]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Vinayak K. Prasad", email = "vinayak.prasad@ucsf.edu" },
+    { name = "Azra Raza", email = "ar2240@cumc.columbia.edu" },
+    { name = "Mukesh Verma", email = "vermam@mail.nih.gov" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3,<3.0.0",
+    "pandas>=2.2.3,<3.0.0"
+]
+
+[tool.poetry]
+packages = [{include = "pubmed_fetcher", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.cli:main"
