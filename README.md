@@ -8,7 +8,7 @@ A simple Python CLI tool to fetch PubMed research papers and save them as a CSV 
 
 ##Clone the repository:
 
-git clone https://github.com/yourusername/pubmed-fetcher.git
+git clone https://github.com/vijiloganadhan/Aganitha-Cognitive-Solutions-task.git
 cd pubmed-fetcher
 
 #Install dependencies:
